@@ -1,0 +1,165 @@
+/* General Page Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('../backgroundimage.jpg'); /* Add your background image */
+  background-size: cover;
+  background-position: center;
+  color: #333;
+}
+
+/* App Container */
+.app-container {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.85); /* Slightly transparent white background for better contrast */
+  border-radius: 10px;
+  width: 80%;
+  margin: 20px auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.app-header {
+  margin-bottom: 20px;
+}
+
+.app-title {
+  font-size: 2.5rem;
+  color: #4CAF50;
+}
+
+/* Link Button */
+.mood-chart-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.mood-chart-button:hover {
+  background-color: #45a049;
+  transform: translateY(-3px);
+}
+
+/* Calendar Container */
+.calendar-container {
+  position: relative;
+  padding: 20px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Date Picker */
+.calendar-input {
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Mood Selector Slider */
+.emoji-slider {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+.emoji-button {
+  background-color: #f0f0f0;
+  border: none;
+  font-size: 2rem;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.emoji-button.selected {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.emoji-button:hover {
+  transform: scale(1.1);
+}
+
+/* Mood Display */
+.mood-display {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Mood Chart */
+/* Mood Chart Container */
+.mood-chart-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f0f4f7;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mood Chart Title */
+.mood-chart-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+/* Chart Wrapper */
+.chart-wrapper {
+  position: relative;
+  height: 400px;
+}
+
+/* View Mood Chart Button */
+.mood-chart-button {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.mood-chart-button:hover {
+  background-color: #45a049;
+}
+
+/* Increase the size of the emojis displayed in the Y-axis */
+.y-axis-ticks {
+  font-size: 24px;  /* Make emoji larger */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .chart-wrapper {
+      height: 300px;
+  }
+  .mood-chart-title {
+      font-size: 20px;
+  }
+  .mood-chart-button {
+      font-size: 16px;
+      padding: 10px 20px;
+  }
+}
